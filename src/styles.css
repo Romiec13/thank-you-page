@@ -1,0 +1,54 @@
+:root {
+    --background: #f4f9f4;
+    --secondary-color: #74b49b;
+    --headers: #5c8d89;
+    --buttons: #a7d7c5;
+    --font-family: 'Lobster', cursive;
+    --text: 'Gruppo', cursive;
+}
+
+body {
+    font-family: var(--text); 
+    max-width: auto;
+    min-width: 300px;
+    height: 100%;
+    background-color: var(--background);
+    text-align: center;
+    margin-top: 150px;
+}
+
+h1 {
+    color: var(--headers);
+    font-family: var(--font-family);
+}
+
+h2 {
+    color: var(--headers);
+    font-family: var(--font-family);
+}
+
+p {
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    background-color: var(--buttons);
+    border-radius: 10px;
+    border: 4px double var(--headers);
+    color: white ;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--headers);
+    border-color: var(--buttons);
+    color: white;
+}
