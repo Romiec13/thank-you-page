@@ -1,46 +1,74 @@
 :root {
-    --background: #f4f9f4;
-    --secondary-color: #74b49b;
-    --headers: #5c8d89;
+    --background: #1e082b;
+    --secondary-color: #8fd8c6;
+    --headers: #e22f89;
     --buttons: #a7d7c5;
-    --font-family: 'Lobster', cursive;
-    --text: 'Anek Gurmukhi', sans-serif;
+    --font-family: 'VT323', monospace;
+    --text: 'Saira', sans-serif;
 }
 
 body {
     font-family: var(--text); 
     max-width: auto;
     min-width: 300px;
-    height: 100%;
     background-color: var(--background);
     text-align: center;
-    margin-top: 150px;
+    height: 450px;
+    padding-left: auto;
+
+    background-image: url('./game-icon.png');
+    background-repeat: no-repeat;
+    color: var(--background);
+    background-size: 65%;
+    background-position: 50%;
 }
+
+@media (max-width: 1500px) {
+    body {
+    background-size: 80%;
+    }
+
+    p {
+    font-size: 13px;
+    }
+} 
+
+@media (max-width: 550px) {
+    body {
+    background-image: none;
+    }
+
+    p {
+    font-size: 15px;
+    }
+} 
+
+.header-background {
+    margin-top:200px;
+}
+
 
 h1 {
     color: var(--headers);
     font-family: var(--font-family);
-}
-
-h2 {
-    color: var(--headers);
-    font-family: var(--font-family);
+    font-size: 65px;
 }
 
 p {
     font-weight: bold;
+    color:white;
+    font-size: 23px;
 }
 
 a {
-    display: inline-block;
     background-color: var(--buttons);
-    border-radius: 10px;
-    border: 4px double var(--headers);
+    border-radius: 14px;
+   border: none;
     color: white ;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
-    padding: 5px 0;
+    padding: 10px 10px;
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
